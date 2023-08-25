@@ -4,7 +4,7 @@
 
 // $primary: #000000;
 // $secondary: #c1c7c9;
-// $danger: #eb2227;
+$danger: #e43631;
 // $nav-link-color: #868686;
 // $nav-tabs-link-active-bg: #FF8A00;
 // $nav-tabs-link-active-color: white;
@@ -17,6 +17,10 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 
 // Then add additional custom code here
+
+body {
+  background-color: #fafafb !important;
+}
 
 #name {
   position: fixed;
@@ -38,5 +42,87 @@
 }
 
 #detail-data {
-  width: 272px !important;
+  width: 400px !important;
+
+  img {
+    cursor: pointer !important;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+
+  .box1 {
+    p {
+      margin: 0 !important;
+      line-height: 1 !important;
+    }
+
+    p:nth-child(1),
+    p:nth-child(2),
+    p:nth-child(4) {
+      font-size: 16px !important;
+      font-weight: 600 !important;
+    }
+
+    p:nth-child(3),
+    p:nth-child(5) {
+      font-size: 20px !important;
+      font-weight: 700 !important;
+    }
+  }
+
+  .box2 {
+    p {
+      margin: 0 !important;
+      line-height: 1 !important;
+    }
+
+    p:nth-child(1) {
+      font-size: 14px !important;
+      font-weight: 700 !important;
+    }
+
+    p:nth-child(even) {
+      font-size: 14px !important;
+      font-weight: 500 !important;
+    }
+
+    p:nth-child(3),
+    p:nth-child(5),
+    p:nth-child(7),
+    p:nth-child(9) {
+      font-size: 12px !important;
+      font-weight: 400 !important;
+    }
+  }
+
+  .box3 {
+    p {
+      margin: 0 !important;
+      line-height: 1 !important;
+    }
+
+    p:nth-child(1) {
+      font-size: 14px !important;
+      font-weight: 700 !important;
+    }
+
+    p.list1 {
+      font-size: 12px !important;
+      font-weight: 400 !important;
+    }
+
+    p.list2 {
+      font-size: 12px !important;
+      font-weight: 600 !important;
+    }
+  }
+}
+
+footer {
+  background-color: #fcebea !important;
+  border-color: #f7c1bf !important;
+  border-top: 1px !important;
 }

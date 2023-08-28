@@ -4,6 +4,7 @@
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11973,6 +11974,8 @@ textarea.form-control-lg {
 }
 body {
   background-color: #fafafb !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  min-height: 100vh !important;
 }
 
 #name {
@@ -11987,15 +11990,20 @@ body {
 }
 
 .map-container {
-  margin-top: 100px !important;
-  margin-bottom: 100px !important;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
 }
 .map-container path {
   cursor: pointer !important;
 }
 
 #detail-data {
-  width: 400px !important;
+  width: 350px !important;
+}
+@media (min-width: 1200px) {
+  #detail-data {
+    width: 400px !important;
+  }
 }
 #detail-data img {
   cursor: pointer !important;
@@ -12059,4 +12067,21 @@ footer {
   background-color: #fcebea !important;
   border-color: #f7c1bf !important;
   border-top: 1px !important;
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+@media (min-width: 576px) {
+  footer {
+    position: relative !important;
+  }
+}
+@media (min-width: 4096px) {
+  footer {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
 }/*# sourceMappingURL=main.css.map */

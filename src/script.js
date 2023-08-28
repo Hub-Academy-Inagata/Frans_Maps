@@ -37,6 +37,10 @@ document.querySelectorAll('.allPaths').forEach((e) => {
     isOpen = true;
     document.getElementById('detail-data').style.opacity = 1;
     document.getElementById('detail-data').style.display = 'flex';
+    document.getElementById('footer').style.position = 'relative';
+    document.getElementById('footer').style.bottom = 0;
+    document.getElementById('footer').style.left = 0;
+    document.getElementById('footer').style.right = 0;
   });
 });
 
@@ -45,4 +49,19 @@ document
   .addEventListener('click', () => {
     document.getElementById('detail-data').style.opacity = 0;
     document.getElementById('detail-data').style.display = 'none';
+    document.getElementById('footer').style.position = 'absolute';
+    document.getElementById('footer').style.bottom = 0;
+    document.getElementById('footer').style.left = 0;
+    document.getElementById('footer').style.right = 0;
+  });
+
+document
+  .getElementById('arrow-bottom')
+  .addEventListener('click', () => {
+    document.getElementById('detail-data').style.opacity = 0;
+    document.getElementById('detail-data').style.display = 'none';
+    document.getElementById('footer').style.position = 'absolute';
+    document.getElementById('footer').style.bottom = 0;
+    document.getElementById('footer').style.left = 0;
+    document.getElementById('footer').style.right = 0;
   });

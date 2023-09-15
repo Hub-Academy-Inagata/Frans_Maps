@@ -1,4 +1,4 @@
-let isOpen = false;
+let isOpen = true;
 
 if (!isOpen) {
   document.getElementById('detail-data').style.opacity = 0;
